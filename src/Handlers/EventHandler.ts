@@ -53,7 +53,7 @@ export default class EventHandler {
       }
       const buttonMessage: any = {
         contentText: `${text}`,
-        footerText: "🎇 Beyond 🎇",
+        footerText: "Angela🚀",
         buttons: buttons,
         headerType: 1,
       };
@@ -84,18 +84,18 @@ export default class EventHandler {
     const promote = event.action === "promote";
     const demote = event.action === "demote";
     /*const text = add
-			? `- ${group.subject || "___"} -\n\n💠 *Group Description:*\n${
+			? `- ${group.subject || "___"} -\n\n💎 *Group Description:*\n${
 					group.desc
 			  }\n\nHope you follow the rules and have fun!\n\n*‣ ${event.participants
 					.map((jid) => `@${jid.split("@")[0]}`)
 					.join(", ")}*`
 			: event.action === "remove"
-			? `Goodbye *@${
+			? `How? and Why? has that happened *@${
 					event.participants[0].split("@")[0]
-			  }* 👋🏻, we're probably not gonna miss you.`
-			: `Ara Ara looks like *@${
+			  }*, Anyway Goodbye 👋.`
+			: ` 🦄 HEHEHE OK! *@${
 					event.participants[0].split("@")[0]
-			  }* got ${this.client.util.capitalize(event.action)}d${
+			  }* Got ${this.client.util.capitalize(event.action)}d${
 					event.actor ? ` by *@${event.actor.split("@")[0]}*` : ""
 			  }`;*/
     const contextInfo = {
@@ -126,7 +126,7 @@ export default class EventHandler {
         welcome.toBuffer(),
         MessageType.image,
         {
-          caption: `- ${group.subject || "___"} -\n\n💠 *Group Description:*\n${
+          caption: `- ${group.subject || "___"} -\n\n💎 *Group Description:*\n${
             group.desc
           }\n\nHope you follow the rules and have fun!\n\n*‣ ${event.participants
             .map((jid) => `@${jid.split("@")[0]}`)
@@ -159,17 +159,17 @@ export default class EventHandler {
         goodbye.toBuffer(),
         MessageType.image,
         {
-          caption: `Goodbye *@${
+          caption: `How? and Why? has that happened *@${
             event.participants[0].split("@")[0]
-          }* 👋🏻, we're probably not gonna miss you.`,
+          }*, Anyway Goodbye 👋.`,
           contextInfo,
         }
       ));
     }
     if (promote) {
-      const text = `Congratulations *@${
+      const text = `🦄 HEHEHE OK! *@${
         event.participants[0].split("@")[0]
-      }*, you're now an admin.`;
+      }*, Has Been Promoted.`;
       return void this.client.sendMessage(
         event.jid,
         text,
@@ -178,9 +178,9 @@ export default class EventHandler {
       );
     }
     if (demote) {
-      const text = `Ara Ara looks like *@${
+      const text = `🦄 HEHEHE OK! *@${
         event.participants[0].split("@")[0]
-      }* got demoted.`;
+      }* Has Been Demoted.`;
       return void this.client.sendMessage(
         event.jid,
         text,
