@@ -86,13 +86,13 @@ export default class EventHandler {
     /*const text = add
 			? `- ${group.subject || "___"} -\n\n💎 *Group Description:*\n${
 					group.desc
-			  }\n\nHope you follow the rules and have fun!\n\n*‣ ${event.participants
+			  }\n\nHope you follow the rules and have fun🎉🎊!\n\n*‣ ${event.participants
 					.map((jid) => `@${jid.split("@")[0]}`)
 					.join(", ")}*`
 			: event.action === "remove"
 			? `How? and Why? has that happened *@${
 					event.participants[0].split("@")[0]
-			  }*, Anyway Goodbye 👋.`
+			  }*, Anyway Goodbye 👋 Coz We've Lost You.`
 			: ` 🦄 HEHEHE OK! *@${
 					event.participants[0].split("@")[0]
 			  }* Got ${this.client.util.capitalize(event.action)}d${
@@ -159,9 +159,9 @@ export default class EventHandler {
         goodbye.toBuffer(),
         MessageType.image,
         {
-          caption: `How? and Why? has that happened *@${
+          caption: `How? and Why? has it happened *@${
             event.participants[0].split("@")[0]
-          }*, Anyway Goodbye 👋.`,
+          }*, Anyway Goodbye 👋 Coz We've Lost You.`,
           contextInfo,
         }
       ));
