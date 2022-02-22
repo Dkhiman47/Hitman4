@@ -26,7 +26,7 @@ export default class Command extends BaseCommand {
         `Please provide the new prefix.\n\n*Example: ${this.client.config.prefix}setprefix $`
       ));
     this.client.config.prefix = newprefix;
-    const text = `✅ *Successfully changed the prefix to ${newprefix}.*`;
+    const text = `*Successfully changed the prefix to ${newprefix}.*`;
     M.reply(text);
   };
 }
