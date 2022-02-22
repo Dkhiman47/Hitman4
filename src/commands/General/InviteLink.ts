@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
   run = async (M: ISimplifiedMessage): Promise<void> => {
     // check if Bot is the admin
     if (!M.groupMetadata?.admins?.includes(this.client.user.jid))
-      return void M.reply(`I'm not an admin of this group.`);
+      return void M.reply(`Promote the Bot to use this Command.`);
     if ((await this.client.getGroupData(M.from)).invitelink) {
       const code = await this.client.groupInviteCode(M.from).catch(() => {
         return void M.reply("Could not get the invite link");
