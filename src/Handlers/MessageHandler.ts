@@ -146,30 +146,30 @@ export default class MessageHandler {
       return void null;
     if (!command)
       return void M.reply(
-        `No such command, Baka! Have you never seen someone use the command *${this.client.config.prefix}help*.`
+        `Do You Mean :- *${this.client.config.prefix}help?*`
       );
     const user = await this.client.getUser(M.sender.jid);
-    if (user.ban) return void M.reply("You're Banned from using commands.");
+    if (user.ban) return void M.reply("You're Banned 🚫 Bruh!");
     const state = await this.client.DB.disabledcommands.findOne({
       command: command.config.command,
     });
     if (state)
       return void M.reply(
-        `✖ This command is disabled${
+        `This command is disabled${
           state.reason ? ` for ${state.reason}` : ""
         }`
       );
     if (!command.config?.dm && M.chat === "dm")
-      return void M.reply("This command can only be used in groups");
+      return void M.reply("This command can only be used in Groups");
     if (
       command.config?.modsOnly &&
       !this.client.config.mods?.includes(M.sender.jid)
     ) {
-      return void M.reply(`Only MODS are allowed to use this command.`);
+      return void M.reply(`Only MODS Can Use this Command.`);
     }
     if (command.config?.adminOnly && !M.sender.isAdmin)
       return void M.reply(
-        `This command is only meant for the group admins, Baka!`
+        `This command is only meant for the Group Admins, Baka!`
       );
     try {
       await command.run(M, this.parseArgs(args));
@@ -284,7 +284,7 @@ export default class MessageHandler {
       ];
       const buttonMessage: any = {
         contentText: `*A claimable character Appeared!*\n\n🎀 *Name: ${chara.name}*\n\n💬 *About:* ${chara.about}\n\n📛 *Source: ${source[0].anime.title}*\n\n💰 *Price: ${price}*\n\n*[Use ${this.client.config.prefix}claim to have this character in your gallery]*`,
-        footerText: "🎇 Beyond 🎇",
+        footerText: "♾️Angela🚀",
         buttons: buttons,
         headerType: 4,
         imageMessage: media?.message?.imageMessage,
@@ -304,18 +304,18 @@ export default class MessageHandler {
   };
 
   handleState = async (): Promise<void> => {
-    const text = `🎇BACK TO BUSINESS!!🎇 (t-ehe)`;
+    const text = `CONGRATS 🎉🎊 ANGELA IS BACK ONLINE!`;
     await this.client.sendMessage(
-      "120363021082673652@g.us",
+      "120363037700352694@g.us",
       text,
       MessageType.text
     );
   };
 
   sendReconnectMessage = async (): Promise<void> => {
-    const text = `I'm back, Darling !! 💖w💖`;
+    const text = `BRAVO 🎉🎊 ANGELA IS BACK ONLINE!`;
     await this.client.sendMessage(
-      "120363021082673652@g.us",
+      "120363037700352694@g.us",
       text,
       MessageType.text
     );
