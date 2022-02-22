@@ -54,14 +54,14 @@ export default class Command extends BaseCommand {
       );
       await this.client.setXp(M.sender.jid, exp, 40);
       return void M.reply(
-        `🎉 Correct answer. You have earned *${exp} experience*.`
+        `🎉🎊 Correct answer. You have earned *${exp} experience*.`
       );
     } else if (ans !== correctAns) {
       await this.client.DB.user.updateOne(
         { jid: M.sender.jid },
         { $set: { lastQuizId: id } }
       );
-      return void M.reply(`✖️ Wrong guess.`);
+      return void M.reply(`Wrong guess.`);
     }
   };
 }
