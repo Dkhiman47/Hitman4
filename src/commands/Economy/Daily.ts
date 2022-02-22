@@ -30,6 +30,6 @@ export default class Command extends BaseCommand {
       { jid: user },
       { $set: { lastDaily: Date.now() } }
     );
-    return void M.reply(`🎉 *1000 gold* has been added to your wallet.`);
+    return void M.reply(`🎉🎊 *1000 gold* has been added to your wallet.`);
   };
 }
