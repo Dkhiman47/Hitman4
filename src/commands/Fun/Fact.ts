@@ -25,7 +25,7 @@ export default class Command extends BaseCommand {
         M.reply(text);
       })
       .catch((err) => {
-        M.reply(`✖  An error occurred.`);
+        M.reply(`An error occurred.`);
       });
   };
 }
