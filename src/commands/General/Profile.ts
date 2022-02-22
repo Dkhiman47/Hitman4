@@ -122,7 +122,7 @@ export default class Command extends BaseCommand {
         ).gallery.length
       }*\n\n👑 *Admin: ${
         M.groupMetadata?.admins?.includes(user) || false
-      }*\n\n✖ *Ban: ${(await this.client.getUser(user)).ban || false}*`
+      }*\n\n *Ban: ${(await this.client.getUser(user)).ban || false}*`
     );
   };
 }
