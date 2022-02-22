@@ -97,7 +97,7 @@ export default class Command extends BaseCommand {
       if (!term) return void M.reply(`🪧 *OPTIONS:*\n${text}`);
       if (!Object.keys(Reactions).includes(term))
         return void M.reply(
-          `✖  No Reaction Found 🧧\nUse ${this.client.config.prefix}r to see all available reactions`
+          `No Reaction Found 🧧\nUse ${this.client.config.prefix}r to see all available reactions`
         );
     }
     if (M.quoted?.sender) M.mentioned.push(M.quoted.sender);
