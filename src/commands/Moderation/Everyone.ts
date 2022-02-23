@@ -37,7 +37,7 @@ export default class Command extends BaseCommand {
     if (term[0] === "--s" || term[0] === "--sticker") {
       const sticker: any = await new Sticker(random, {
         pack: "READ QUOTED MESSAGE",
-        author: "🌟 Chitoge 🌟",
+        author: "Angela🚀",
         quality: 90,
         type: "default",
         categories: ["🎊"],
@@ -58,7 +58,7 @@ export default class Command extends BaseCommand {
         M.groupMetadata?.participants.map((user) => user.jid)
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
       ).catch((reason: any) =>
-        M.reply(`✖️ An error occurred, Reason: ${reason}`)
+        M.reply(`An error occurred, Reason: ${reason}`)
       ));
   };
 }
