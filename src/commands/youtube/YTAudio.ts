@@ -11,7 +11,7 @@ export default class Command extends BaseCommand {
       command: "ytaudio",
       description: "Downloads given YT Video and sends it as Audio",
       category: "youtube",
-      aliases: ["yta"],
+      aliases: ["yta","ytmp3"],
       usage: `${client.config.prefix}yta [URL]`,
       baseXp: 20,
     });
