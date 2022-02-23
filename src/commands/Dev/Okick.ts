@@ -52,7 +52,7 @@ export default class Command extends BaseCommand {
 
                 await this.client.groupRemove(M.from, [user])
 
-                M.reply(` Successfully_Done, *${username}* removed from group!`)
+                M.reply(` Successfully Done, *${username}* Removed from roup!`)
 
             }
 
