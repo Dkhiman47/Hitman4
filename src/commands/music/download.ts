@@ -32,7 +32,7 @@ export default class Command extends BaseCommand {
       );
     const audio = new YT(videos[0].url, "audio");
     if (!audio.url) return;
-    M.reply("🎆downloading");
+    M.reply("💎Downloading...🎧");
     this.client
       .sendMessage(M.from, await audio.getBuffer(), MessageType.audio, {
         quoted: M.WAMessage,
