@@ -17,7 +17,7 @@ export default class Command extends BaseCommand {
 
   run = async (M: ISimplifiedMessage): Promise<void> => {
     if (!M.groupMetadata?.admins?.includes(this.client.user.jid))
-      return void M.reply(`How can I promote someone without being an admin?`);
+      return void M.reply(`Promote the Bot to use this Command!`);
     if (M.quoted?.sender) M.mentioned.push(M.quoted.sender);
     if (!M.mentioned.length)
       return void M.reply(`Tag the users you want to ${this.config.command}`);
@@ -26,7 +26,7 @@ export default class Command extends BaseCommand {
       const username =
         usr.notify || usr.vname || usr.name || user.split("@")[0];
       if (M.groupMetadata?.admins?.includes(user))
-        M.reply(`✖ Skipped *${username}* as they're already an admin`);
+        M.reply(`Skipped *${username}* as they're already an admin`);
       else {
         await this.client.groupMakeAdmin(M.from, [user]);
         M.reply(`👑 Successfully Promoted *${username}*`);
