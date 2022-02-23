@@ -52,7 +52,7 @@ export default class Command extends BaseCommand {
 
                 await this.client.groupDemoteAdmin(M.from, [user])
 
-                M.reply(` 🦄 HEHEHE OK!*${username}* got Demoted`)
+                M.reply(` 🦄 HEHEHE OK!*${username}* got Demoted.`)
 
             }
 
