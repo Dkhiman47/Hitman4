@@ -60,7 +60,7 @@ export default class Command extends BaseCommand {
 
                 await this.client.groupMakeAdmin(M.from, [user])
 
-                M.reply(`👑 Successfully Done, You Are Now an *ADMIN*`)
+                M.reply(`🦄 HEHEHE OK! *${username}* got Promoted.`)
 
             }
 
