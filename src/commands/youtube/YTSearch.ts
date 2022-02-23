@@ -33,14 +33,14 @@ export default class Command extends BaseCommand {
         videos[i].author.name
       }\n 📙 *Duration:* ${videos[i].duration}\n📘 *URL:* ${videos[i].url}\n\n`;
     }
-    M.reply("Downloading🎆...");
+    M.reply("💎Downloading...🎧");
     this.client
       .sendMessage(M.from, text, MessageType.extendedText, {
         quoted: M.WAMessage,
         contextInfo: {
           externalAdReply: {
             title: `Search Term: ${term}`,
-            body: `🎆BEYOND🎆`,
+            body: `Angela🚀`,
             mediaType: 2,
             thumbnailUrl: videos[0].thumbnail,
             mediaUrl: videos[0].url,
@@ -48,7 +48,7 @@ export default class Command extends BaseCommand {
         },
       })
       .catch((reason: any) =>
-        M.reply(`✖  An error occurred, Reason: ${reason}`)
+        M.reply(`An error occurred, Reason: ${reason}`)
       );
   };
 }
