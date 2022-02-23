@@ -102,11 +102,11 @@ export default class Command extends BaseCommand {
 
       for (const key of keys)
 
-        text += `*━━━❰ ${this.client.util.capitalize(
+        text += `*━━━❰♾️ ${this.client.util.capitalize(
 
           key
 
-        )} ❱━━━*\n \`\`\`${categories[key]
+        )} 🚀❱━━━*\n \`\`\`${categories[key]
 
           .map((command) => command.config?.command)
 
