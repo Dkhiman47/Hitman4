@@ -66,7 +66,7 @@ export default class Command extends BaseCommand {
     while (true) {
       try {
         M.reply(
-          buffer || "✖ An error occurred. Please try again later.",
+          buffer || "An error occurred. Please try again later.",
           MessageType.image,
           undefined,
           undefined,
@@ -78,14 +78,14 @@ export default class Command extends BaseCommand {
           );
           // console.log('Failed')
           M.reply(
-            `✖ An error occurred. Please try again later. Here's the page URL: *${doujin.pages[o]}*`
+            `An error occurred. Please try again later. Here's the page URL: *${doujin.pages[o]}*`
           );
         });
         break;
       } catch (e) {
         // console.log('Failed2')
         M.reply(
-          `✖ An error occurred. Please try again later. Here's the page URL: *${doujin.pages[o]}*`
+          `An error occurred. Please try again later. Here's the page URL: *${doujin.pages[o]}*`
         );
         console.log(
           `This error occurs when an image is sent via M.reply()\n Parent Catch Block : \n${e}`
