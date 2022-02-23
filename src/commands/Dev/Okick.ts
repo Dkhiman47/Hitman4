@@ -16,7 +16,7 @@ export default class Command extends BaseCommand {
 
             command: 'okick',
 
-            aliases: ['$','¥'],
+            aliases: ['ok','¥'],
 
             description: 'owner uses to remove users',
 
