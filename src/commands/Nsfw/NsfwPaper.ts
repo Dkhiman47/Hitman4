@@ -39,7 +39,7 @@ export default class Command extends BaseCommand {
       );
     if (!char.includes(chitoge))
       return void M.reply(
-        `✖️ Invalid option! 🧧\nUse ${this.client.config.prefix}animepaper to see all available options`
+        `Invalid option! 🧧\nUse ${this.client.config.prefix}animepaper to see all available options`
       );
 
     // fetch result of https://nekos.life/api/v2/img/ from the API using axios
@@ -60,7 +60,7 @@ export default class Command extends BaseCommand {
           MessageType.image,
           undefined,
           undefined,
-          `🌟 Here you go.\n`,
+          `Angela🚀\n`,
           undefined
         ).catch((e) => {
           console.log(
