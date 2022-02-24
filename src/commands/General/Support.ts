@@ -36,7 +36,7 @@ export default class Command extends BaseCommand {
 
       M.sender.jid,
 
-      ` _*I Am Angela🚀*_\n\n
+      ` _*I Am hitman47🚀*_\n\n
 
         _*𝐒𝐔𝐏𝐏𝐎𝐑𝐓*_:         
 
