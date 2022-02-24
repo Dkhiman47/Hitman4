@@ -62,7 +62,7 @@ export default class Command extends BaseCommand {
 
                         title: videos[0].title.substr(0, 30),
 
-                        body: `author : ${videos[0].author.name.substr(0, 20)}\nAngela🚀`,
+                        body: `author : ${videos[0].author.name.substr(0, 20)}\nhitman🚀`,
 
                         mediaType: 2,
 
