@@ -53,7 +53,7 @@ export default class EventHandler {
       }
       const buttonMessage: any = {
         contentText: `${text}`,
-        footerText: "Angela🚀",
+        footerText: "hitman47🚀",
         buttons: buttons,
         headerType: 1,
       };
