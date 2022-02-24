@@ -35,7 +35,7 @@ export default class Command extends BaseCommand {
     };
     const uptime = () => formatTime(process.uptime());
     await M.reply(
-      `*━━✽✾✰✰━❰ 𝙰𝙽𝙶𝙴𝙻𝙰🚀 ❱━✰✰✾✽━━*\n\n 💎🔮 *Groups: ${
+      `*━━✽✾✰✰━❰ Hitman47🚀 ❱━✰✰✾✽━━*\n\n 💎🔮 *Groups: ${
         chats.length
       }*/69\n\n🟩🏆 *Users: ${users}*\n\n🚦🚥 *Uptime: ${uptime()}*`
     );
