@@ -62,7 +62,14 @@ export default class Command extends BaseCommand {
 				{
 					quoted: M.WAMessage,
 					mimetype: Mimetype.gif,
-					caption: `${text} 🔥 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`,
+					caption: `${text}
+                                       ─❅┈[ 𝐡𝐢𝐭𝐦𝐚𝐧47 𝑩𝒐𝒕 ]┈❅───
+                                       ┌────────────┈❅
+                                       │   🧨 𝐡𝐢𝐭𝐦𝐚𝐧47
+                                       │   ©️ 🚀🥂😻:𝐁𝐢𝐭𝐜𝐡 𝐂𝐥𝐮𝐛😻🚀🥵
+                                       └────────────┈⁂
+                                       ❅┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈❅ 
+                                     😻🚀 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`,
 					contextInfo: { mentionedJid: [user] },
 				}
 			);
