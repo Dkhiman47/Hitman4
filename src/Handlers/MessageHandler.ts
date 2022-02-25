@@ -313,7 +313,7 @@ export default class MessageHandler {
   };
 
   sendReconnectMessage = async (): Promise<void> => {
-    const text = `BRAVO 🎉🎊 ANGELA🚀 IS CONNECTED BACK ONLINE!`;
+    const text = `BRAVO 🎉🎊 hitman47🚀 IS CONNECTED BACK ONLINE!`;
     await this.client.sendMessage(
       "120363037700352694@g.us",
       text,
