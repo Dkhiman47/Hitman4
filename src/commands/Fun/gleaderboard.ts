@@ -51,7 +51,7 @@ export default class Command extends BaseCommand {
     }
     console.log(message);
     M.reply(
-      await request.buffer("https://wallpapercave.com/uwp/uwp1997564.jpeg"),
+      await request.buffer("https://media.tenor.com/videos/8fb551bffa77b6f6d875eb0a0a5e8fa9/mp4"),
       MessageType.image,
       undefined,
       mention,
