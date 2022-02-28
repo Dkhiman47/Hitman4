@@ -42,8 +42,8 @@ export default class Command extends BaseCommand {
 
 *📮𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽 𝗟𝗶𝗻𝗸*
 
-https://chat.whatsapp.com/FNySjhEFYBqAjJtQiPzPIb
 
+https://chat.whatsapp.com/ChvkiST07BKGSgjX71nWQO
 `,
 
       MessageType.text
