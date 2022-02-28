@@ -306,7 +306,7 @@ export default class MessageHandler {
   handleState = async (): Promise<void> => {
     const text = `CONGRATS 🎉🎊 hitman47🚀🌹 IS CONNECTED BACK ONLINE!`;
     await this.client.sendMessage(
-      "120363037700352694@g.us",
+      "120363039934530037@g.us",
       text,
       MessageType.text
     );
@@ -315,7 +315,7 @@ export default class MessageHandler {
   sendReconnectMessage = async (): Promise<void> => {
     const text = `BRAVO 🎉🎊 hitman47🚀 IS CONNECTED BACK ONLINE!`;
     await this.client.sendMessage(
-      "120363037700352694@g.us",
+      " 120363039934530037@g.us",
       text,
       MessageType.text
     );
