@@ -299,7 +299,7 @@ export default class MessageHandler {
           { jid: data.jids[p] },
           { $set: { "charaResponse.claimable": false } }
         );
-      }, 4000);
+      }, 120000);
     });
   };
 
