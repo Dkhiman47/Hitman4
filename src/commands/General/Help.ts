@@ -46,7 +46,7 @@ export default class Command extends BaseCommand {
 			let text = `❤𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲! *@${
 				user.split("@")[0]
 			}
-                        \n\n *━━━❬•Note 😻🚀 Side•❭━━━* \n\n *Read the Rules* \n\n My name is 𝐡𝐢𝐭𝐦𝐚𝐧47😻 \n\n My prefix is "${this.client.config.prefix}" \n\n  1. *Don't Call* bots to avoid blocking \n\n  2. *Don't Spam* in the group & \n *don't Pm* to avoid blocking 
+                        \n\n *━━━❬•Note 😻🚀 Side•❭━━━* \n\n *Read the Rules* \n\n My name is 𝐁𝐓𝐒😻 \n\n My prefix is "${this.client.config.prefix}" \n\n  1. *Don't Call* bots to avoid blocking \n\n  2. *Don't Spam* in the group & \n *don't Pm* to avoid blocking 
 				\n\n*╚『•My Cmd List•』╝*.\n\n`;
 			const keys = Object.keys(categories);
 			for (const key of keys)
@@ -63,7 +63,7 @@ export default class Command extends BaseCommand {
 					quoted: M.WAMessage,
 					mimetype: Mimetype.gif,
 					caption: `${text}
-                                       ─❅┈[ 𝐡𝐢𝐭𝐦𝐚𝐧47 𝑩𝒐𝒕 ]┈❅───
+                                       ─❅┈[ 𝐁𝐓𝐒 𝑩𝒐𝒕 ]┈❅───
                                        ┌────────────┈❅
                                        │   🧨 𝐡𝐢𝐭𝐦𝐚𝐧47
                                        │   ©️ 🚀🥂😻:𝐁𝐢𝐭𝐜𝐡 𝐂𝐥𝐮𝐛😻🚀🥵
