@@ -29,7 +29,9 @@ export default class Command extends BaseCommand {
       return void (await M.reply(`Please provide the Broadcast Message.`));
     const term = joined.trim();
     const images = [
-      "https://wallpapercave.com/w/wp10318653.jpg",
+      "https://wallpapercave.com/w/wp3281482.jpg",
+      "https://wallpapercave.com/w/wp10318669.jpg",
+      "https://wallpapercave.com/w/wp10318667.jpg",
     ];
     const selected = images[Math.floor(Math.random() * images.length)];
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
